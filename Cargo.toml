@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "crates/types",
+    "crates/node", 
+    "crates/coordinator",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Bulk Exchange"]
+
+[workspace.dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+postcard = { version = "1.0", features = ["alloc", "use-std"] }
+alloy-primitives = { version = "0.8", features = ["serde"] }
+rand = "0.8"
+lru = "0.12"
+fastrand = "2.3.0"
+smallvec = "1.15.1"

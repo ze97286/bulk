@@ -1,0 +1,9 @@
+[package]
+name = "bulk-types"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde.workspace = true
+alloy-primitives.workspace = true
+bytes = "1.5"
