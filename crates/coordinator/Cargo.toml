@@ -1,0 +1,16 @@
+[package]
+name = "bulk-coordinator" 
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "bulk-coordinator"
+path = "src/main.rs"
+
+[dependencies]
+bulk-types = { path = "../types" }
+bulk-node = { path = "../node" }
+tokio.workspace = true
+postcard.workspace = true
+alloy-primitives.workspace = true
+bytes = "1.5"
